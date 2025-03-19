@@ -70,11 +70,13 @@ nav ul li a:hover{
 .container_nosotros h2{
     font-size: 5rem;
 }
+.container_nosotros h3{
+    font-size: 3rem;
+}
 
 .container_servicios{
     padding: 0 20px 0 20px;
     display: flex;
-    min-height:  90vh;
     background:linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgNDQ0NBwgIBwgNBw0HBwcHBw8ICQcNFREWFhUREx8YHSggGCYlJxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0NDw8NDisZFRkrKysrKysrNystNystLSsrKystLSstKzctNys3LS0tKy0rKystKysrKysrLSsrKysrK//AABEIAKgBLAMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAACAQADBwb/xAAaEAEBAQEBAQEAAAAAAAAAAAABAAJRkRFh/8QAGgEBAQEBAQEBAAAAAAAAAAAAAgABBgQDB//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8A+h+wWWm56bpn55B03PTLTc9NFE03PTXTDTRwdMFqtz00cTTc1ktz02nE03Nf2qwWw4i3PTVYLacRf25r+yW5rRRFYL+tVgtpiv7BXtVgtFEV6+wV6+1WC0cRXr7FXr7ZitFEV6+wdPX2qwaKIr19i6evtWDRxnT19gr19qwWmsr19ir19qxaJvr19p9evtosWxlevtPr19tRsJHT19p9evtmkSe0abnplpuembloOm5rLTc9NHB0w010wWjg6bnplpuem04i3PTLTc1sODphplpua2lBWCy03PTRxFuay03No4iwWqwbSiLBarBo4jBarBooiwWqxWigsVqwaKIxasGjiMWrRpqMatLK1GLVpEkaNmllKJSrGJPZdMNNdMNN9HLQdNzWS3PTT6QdMFqsFooOm5rLTc9NpyJpuemWm5rYcRbnpktz02nEW5rJYLRwVgtVgtpRFuayWC0cFgyWC0URYNWC0URYLVYtFBYtWLRwWLVi01GLVo0SNGsWLYjRrFiTMatLCiMatIk9i0w010w031cvBW56ZabmtHE03PTXTDTacHTc1lpgthwVuemSw02nB0wWqwWigrDTVYLRxFubJYLaUFYLVYNHEWCyWDRRFg1WDRRGDVitEiwZMGjRi1YtNRpallazFq0iURi1aNlKJRs0YkjT7ZpGtewaYaarc9N9nMyItz0yW56aODpgsluemikHTBarBbTgrDTXTBaOCsFktzWjiabmslgtpQVgslua0cRYNVg0URYLJYLRQWK1YNHEWLVg0URi1YtNSLVi0TUbUY1qUtRiSNKsWJRmLVi2UkaVpFr13TDTXTBb7uZg6bmstNzW04i3PTLTc1sOItzWS3PTacRbmslua0URbmslgtHBWC1WDacRYLVYLRRGC1YNEiwZMGjgsWrFaKCxasWiRi1YtNRo2pZWsxqxYkzFqxjSjMWrRiSRq0jSRjVpY162sNNdMNN6HNQVuemS3NaOJpuemS3NaOItzWWm5raURYLVYLRwdMGqwW0ojBarBaOCsVqsGiiLBasFo4iwasVoojBqsWiiMWrBprMWrGiaLWLFsajajEkaWoxpI0s0Y0ko1ixpI0tSxr1nTBa6YLepzUHTDTXTBbDgrBa6YabTgrBa6gtHBWGmqwWjiLc1ksFtKCsFrpitFBWCyWC0cRYLVYLRRGLVgtFEYtVg0TMWzRpqNLUspI0s0YtjMWrGNKMxasWJNGrGNJmLVjGtZjVjYcerrDTJbnpvU5qQdMFqsFo4KwWqwW0oOmCyW56aOItzWSwbTgrBZLc1ooiwWrFo4KwWSwWiiLBqsVooKxarFoojBqxaazFqxomi1YsWxqNmjGlEaWoxJGjZixpNRs0Y0kaNqMa2I0s0sJ6rpuemS3PTetzkFYLJbmtpQdMFktzWjiabmslgtHBWC1WC2lEWC1WDRxFg1YrRQVgslgtFEWDVi0URg1YtEjRtFprNLUspI0s0YkjRqxjSjMWrFi1GlmjGkjRqxjSRo1YsSiUqxsa9TYP2lr2OdkDX2D95a1FI5v3kH7y1rTkB+8fLm/ePlbVpSOb94+QfvHy1q05AR4+QfvHy1rSkB+8fIo8fLWs08BHj5BHj5W1aUgI8fII8fLWrSkFHj5FHj5a1aWCjx8ijx8tazSxPjx8ojx8tazWyD8ePlEePlrRtLBR4+UR4+WtHSkRHj5H48fK2jrcH48fIo8fLWjpSIjx8ijx8taNpSJ8ePkUePlbRtLBR4+R+PHy1rNKR/9k=);
     background-repeat: no-repeat;
     background-position: center center;
@@ -82,6 +84,7 @@ nav ul li a:hover{
     background-attachment: scroll;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: white;
     text-align: center;
 
@@ -105,10 +108,13 @@ nav ul li a:hover{
     padding: 20px;
     margin: 5px;
 }
+.card1:hover{
+    background-color: #041124;
+    cursor: pointer;
+}
 
 .material-symbols-outlined{
     font-size: 4rem;
-    cursor: pointer;
 }
 
 .container_contacto{
@@ -123,6 +129,7 @@ nav ul li a:hover{
     background-attachment: scroll;
     color: white;
     text-align: center;
+    justify-content: center;
     padding: 50px;
 }
 
@@ -131,7 +138,6 @@ nav ul li a:hover{
     background-color: rgba(3, 15, 33, 0.5);
     border-radius: 8px;
     flex: 1;
-    max-width: 20%;
     min-width: 250px;
     padding: 20px;
     margin: 5px;
