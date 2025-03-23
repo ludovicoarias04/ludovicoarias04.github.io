@@ -22,10 +22,18 @@
     <header class="container_header">
         <h1>Gestión TC</h1>
         <nav>
-            <ul>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+            <ul class="navBar">
+                <li onclick=showSideBar()><a class="button"><span class="material-symbols-outlined">menu</span></a></li>
+                <li><a class="nav_links" href="#nosotros">Nosotros</a></li>
+                <li><a class="nav_links" href="#servicios">Servicios</a></li>
+                <li><a class="nav_links" href="#contacto">Contacto</a></li>
+            </ul>
+
+            <ul class="sideBar">
+                <li onclick=hideSideBar()><a class="button"><span class="material-symbols-outlined">close</span></a></li>
+                <li onclick=hideSideBar()><a class="nav_links" href="#nosotros">Nosotros</a></li>
+                <li onclick=hideSideBar()><a class="nav_links" href="#servicios">Servicios</a></li>
+                <li onclick=hideSideBar()><a class="nav_links" href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -139,18 +147,29 @@
         </div>
         
     </footer>
-</body>
+    <script>
+        /*
+        document.addEventListener('scroll', ()=> {
+            const header = document.querySelector('header');
 
-<script>
-    document.addEventListener('scroll', ()=> {
-        const header = document.querySelector('header');
+            if(window.scrollY > 0){
+                header.classList.add('scrolled');
+            }else{
+                header.classList.remove('scrolled');
+            }
 
-        if(window.scrollY > 20){
-            header.classList.add('scrolled');
-        }else{
-            header.classList.remove('scrolled');
+        })*/
+        function showSideBar(){
+            const sideBar = document.querySelector('.sideBar')
+            sideBar.style.display = 'flex'
+        }
+        function hideSideBar(){
+            const sideBar = document.querySelector('.sideBar')
+            sideBar.style.display = 'none'
         }
 
-    })
-</script>
+    </script>
+</body>
+
+
 </html>

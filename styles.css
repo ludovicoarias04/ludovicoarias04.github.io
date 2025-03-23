@@ -5,6 +5,10 @@
     font-family: "Open Sans", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: lightgrey;
 }
@@ -30,34 +34,63 @@ header{
     transition: 0.5s;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 header.scrolled{
     height: 3rem;
-    opacity: 0.9;
-}
-
-nav{
-    margin-right: 5rem;
+    opacity: 0.98;
 }
 
 ul li{
     list-style: none;
 }
 
-nav ul{
+.navBar{
     display: flex;
-    gap: 2rem;
     justify-content: space-between;
+    align-items: center;
 }
-
-nav ul li a{
+.navBar{
+    justify-content: left;
+}
+.navBar .nav_links{
+    margin-left: 3rem;
+}
+.nav_links{
     color: black;
 }
 
-nav ul li a:hover{
+.nav_links:hover{
     color: darkblue;
 }
 
+.sideBar{
+    display: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+
+    flex-direction: column;
+    width: 50%;
+
+    padding-top: 20px;
+}
+.sideBar li{
+    margin-top: 10px;
+    margin-left: 1rem;
+}
+
+.button{
+    display: none;
+}
+.button span{
+    border-style: flex;
+    color: black;
+    font-size: 2.5rem;
+}
 
 .container_nosotros{
     display: flex;
@@ -145,7 +178,6 @@ nav ul li a:hover{
     backdrop-filter: blur(1px);
     background-color: rgba(3, 15, 33, 0.5);
     border-radius: 8px;
-    flex: 1;
     min-width: 250px;
     padding: 20px;
     margin: 5px;
@@ -208,3 +240,21 @@ footer{
 p .material-symbols-outlined{
     font-size: 1rem;
 }
+
+
+@media (max-width: 800px){
+    h1{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    nav{
+        margin: 0;
+    }
+    .navBar .nav_links{
+        display: none;
+    }
+    .button{
+        display: block;
+    }
+}
+
